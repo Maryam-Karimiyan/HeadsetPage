@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    z-index: 1;
+    
+}
+.login-btn{
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.nav-menue{
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding:0 50px;
+    z-index: 1;
+}
+.nav-link{
+    color: #000;
+    margin: auto 15px;
+}
+.headset-black{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    top: -60px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 50px;
+    
+}
+.card{
+    background-color: #fff;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    position: relative;
+}
+.fa-star{
+    color: rgb(247, 230, 0) !important;
+    background-color: #fff;
+    /* z-index: 3; */
+}
+
+
+.special-suggest{
+    /* text-align: right; */
+    position: relative;
+    background-color: rgb(218, 83, 34);
+    color: #fff;
+    border-radius: 3px;
+    padding: 7px;
+    right: 0;
+   
+}
+
+.img-container{
+    position: relative;
+    /* top: -50px;
+     z-index: 0; */
+}
+.cards-img{
+    width: 300px;
+    /* z-index: 0; */
+    position: relative;
+    
+}
+.cards-img-caption{
+    text-align: center;
+    color: rgb(112, 116, 116);
+}
+.top-img-container img{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: -100px;
+}
+.top-img-container figcaption {
+  position: absolute;
+  bottom: 40%;
+  right: 5%;
+  color: rgb(72,72,72);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card-bottom{
+     display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(156, 149, 149);
+}
+.green-cart{
+    color: #fff;
+    background-color: rgb(31, 184, 31);
+    font-size: 20px;
+    padding:10px 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-right: 2px;
+    width: 46px;
+     transition: display 1s linear;
+    -moz-transition: display 1s linear; /* Firefox 4 */
+    -webkit-transition: display 1s linear; /* Safari and Chrome */
+    -o-transition: display 1s linear; /* Opera */
+    -ms-transition: display 1s linear; /* Explorer 10 */
+    
+}
+.green-like{
+    color: #fff;
+    background-color: rgb(31, 184, 31);
+    font-size: 20px;
+    padding:10px 13px;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 46px;
+      transition: display 1s linear;
+    -moz-transition: display 1s linear; /* Firefox 4 */
+    -webkit-transition: display 1s linear; /* Safari and Chrome */
+    -o-transition: display 1s linear; /* Opera */
+    -ms-transition: display 1s linear; /* Explorer 10 */
+}
+ .green-cart  span , .green-like  span{
+    margin-left: 18px;
+    display: none;
+     transition: display 1s linear;
+    -moz-transition: display 1s linear; /* Firefox 4 */
+    -webkit-transition: display 1s linear; /* Safari and Chrome */
+    -o-transition: display 1s linear; /* Opera */
+    -ms-transition: display 1s linear; /* Explorer 10 */
+}
+.green-cart:hover  span , .green-like:hover span{
+  display: inline-block;
+}
+
+
+
+
+.paging{
+    text-align: center;
+    margin:20px auto;
+}
+.fa-circle{
+    margin: auto 5px;
+    font-size: 0.8em;
+    color: rgb(156, 149, 149);
+}
+.fa-circle:hover , .fa-circle:active{
+    color: rgb(78, 74, 74);
+    cursor: pointer;
+}
+/* FOOTER */
+
+footer{
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* padding: -100px; */
+    grid-gap: 50px;
+    background-color:rgba(116,130,143,1);
+    color: #fff;
+    font-size: 1em;
+    width: 100%;
+}
+.footer-menue{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.footer-link{
+    text-decoration: none;
+    color: #fff;
+}
+footer h3{
+    margin:20px auto;
+}
+footer section{
+    margin:40px;
+}
