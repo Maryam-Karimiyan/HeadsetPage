@@ -116,6 +116,7 @@
   justify-content: space-between;
   padding: 20px;
   color: rgb(156, 149, 149);
+  margin-top: -20px;
 }
 
 .green-cart {
@@ -126,12 +127,6 @@
   border-radius: 25px;
   text-decoration: none;
   margin-right: 2px;
-  width: 46px;
-  transition: display 1s linear;
-  -moz-transition: display 1s linear; /* Firefox 4 */
-  -webkit-transition: display 1s linear; /* Safari and Chrome */
-  -o-transition: display 1s linear; /* Opera */
-  -ms-transition: display 1s linear; /* Explorer 10 */
 }
 .green-like {
   color: #fff;
@@ -140,28 +135,22 @@
   padding: 10px 13px;
   border-radius: 20px;
   text-decoration: none;
-  width: 46px;
-  transition: display 1s linear;
-  -moz-transition: display 1s linear; /* Firefox 4 */
-  -webkit-transition: display 1s linear; /* Safari and Chrome */
-  -o-transition: display 1s linear; /* Opera */
-  -ms-transition: display 1s linear; /* Explorer 10 */
-}
+ }
 .green-cart span,
 .green-like span {
   margin-left: 18px;
   display: none;
-  transition: display 1s linear;
-  -moz-transition: display 1s linear; /* Firefox 4 */
-  -webkit-transition: display 1s linear; /* Safari and Chrome */
-  -o-transition: display 1s linear; /* Opera */
-  -ms-transition: display 1s linear; /* Explorer 10 */
-}
+   animation: fade 0.5s ease-in-out;
+ }
 .green-cart:hover span,
 .green-like:hover span {
-  display: inline;
+  display: inline-block;
+  animation: fade 0.5s ease-in-out;
 }
-
+@keyframes fade{
+  0% {width: 0;}
+  100% {width: 32.01px;}
+}
 .paging {
   text-align: center;
   margin: 20px auto;
